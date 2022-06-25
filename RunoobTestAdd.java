@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class RunoobTest {
+public class RunoobTestAdd {
 	public static void main(String[] args) {
 		ArrayList<String> sites = new ArrayList<String>();
 		sites.add("Google");
