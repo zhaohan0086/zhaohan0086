@@ -1,62 +1,40 @@
-package com.zhaohan.homework;
+package com.zhaohan.abstractw;
 
-public class Employee {
+abstract public class Employee {
     private String name;
-    private double daySal;
-    private int workDays;
-    private double grade;
-    private double bonus;
-
-    public String getName() {
-        return name;
-    }
+    private int ID;
+    private double salary;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public double getDaySal() {
-        return daySal;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public void setDaySal(double daySal) {
-        this.daySal = daySal;
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
-    public int getWorkDays() {
-        return workDays;
+    public String getName() {
+        return name;
     }
 
-    public void setWorkDays(int workDays) {
-        this.workDays = workDays;
+    public int getID() {
+        return ID;
     }
 
-    public double getGrade() {
-        return grade;
+    public double getSalary() {
+        return salary;
     }
 
-    public void setGrade(double grade) {
-        this.grade = grade;
-    }
-
-    public double getBonus() {
-        return bonus;
-    }
-
-    public void setBonus(double bonus) {
-        this.bonus = bonus;
-    }
-
-    public Employee(String name, double daySal, int workDays, double grade) {
+    public Employee(String name, int ID, double salary) {
         this.name = name;
-        this.daySal = daySal;
-        this.workDays = workDays;
-        this.grade = grade;
+        this.ID = ID;
+        this.salary = salary;
 
     }
-    public void printSal() {
-        System.out.println("name= " + name + "  daySal=" +
-                daySal + " workDays="
-                + workDays + " grade=" + grade );
-    }
+    //将work做成一个抽象方法
+    public abstract void work();
 }
